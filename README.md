@@ -46,3 +46,17 @@ The project is currently in the planning and research stage. The main focus is t
 8. Complete first test flight
 9. Document problems, fixes, and lessons learned
 10. Explore programmable or autonomous features
+
+
+## Build Path Decision
+
+We are currently comparing two possible build paths:
+
+### Option 1: Betaflight-style FPV quadcopter
+This path is common for manual flight and racing/freestyle drones. It may be cheaper and easier to get flying quickly.
+
+### Option 2: Pixhawk/ArduPilot-style drone
+This path is better for GPS, autonomous flight, and advanced programmable features, but may be more expensive and more complex.
+
+We will compare both options based on cost, difficulty, documentation, software flexibility, and portfolio value before choosing a final direction.
+
