@@ -71,3 +71,34 @@ Instead, Version 1 will focus on using existing flight controller software and c
 C++ will still be an important part of the project. We plan to use C++ for learning core embedded systems concepts, writing small test programs, creating simulations, understanding control logic, and possibly developing custom features later in the project.
 
 AI may be used to explain concepts, help debug code, review documentation, and suggest possible approaches. However, all final decisions, testing, implementation, and documentation will be done and understood by us.
+
+
+## Build Path Research Notes
+
+### Betaflight-style build
+Pros:
+- Its flight performance is great for racing and doing flips (freestyle). Software translates hand movements to the drone without any delay.
+- Gives knowledge and experience on repairability without relying on manufacturer to repair it.
+- very popular, thus, finding tutorials and help on Betaflight Website or FPV forums is simple.
+
+Cons:
+- Must learn soldering and understand electronics, tuning the software can be lengthy.
+- has no safety net, thus letting go of the controller will make the drone fall, it lacks automation hover in place or fly itself back, unless a GPS modification is added
+- Installing wrong parts together can make the drone short-circuit, overheat, or crash
+
+### ArduPilot/Pixhawk-style build
+Pros:
+- this system excel at complex waypoint missions, mapping grids, auto-takeoffs, and auto-landings.
+- many Pixhawk boards offer redundant (bakcup) compasses, barometers, and IMUs (sensors that measure orientation and movement) to prevent crashes if a component fails.
+- can be programmed to trigger specific action (such as "Return to Launch" or "Parachute deploy") if connection is lost or battery level drop too low.
+
+Cons:
+- High-quality Pixhawk boards and accessories (like specialized GPS and telemetry modules) are expensive compared to standard, off-the-shelf drone parts.
+- configuring the setup requires specialized software like Mission Planner or QGroundControl. Means to calibrate sensors and set up hundreds of parameters manually.
+- Unike "plug-and-play" drones, building a Pixhawk drone requires many manual connections and wiring. Thus, this adds weight and complexity to the build.
+
+### Current leaning
+We are currently leaning toward: ArduPilot/Pixhawk
+
+Reason:
+Pixhawk/ArduPilot seems like the better learning path, but we should only choose it if the cost, difficulty, and timeline stay realistic.
