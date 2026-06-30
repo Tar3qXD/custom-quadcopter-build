@@ -60,3 +60,14 @@ This path is better for GPS, autonomous flight, and advanced programmable featur
 
 We will compare both options based on cost, difficulty, documentation, software flexibility, and portfolio value before choosing a final direction.
 
+## Software Development Approach
+
+The software side of this project will be developed using an AI-assisted but student-led approach. The goal is not to let AI complete the project for us, but to use it as a learning and debugging tool while we make the engineering decisions ourselves.
+
+For the first version of the drone, we do not plan to write the entire flight control system from scratch. A full flight control system involves sensor processing, stabilization, PID control, motor mixing, arming logic, safety checks, and communication with the receiver. Writing all of this from zero would be unrealistic and unsafe for the first stage of the project.
+
+Instead, Version 1 will focus on using existing flight controller software and configuration tools to safely build, configure, test, and fly the drone. This will allow us to gain hands-on experience with the hardware, wiring, firmware setup, calibration, debugging, and tuning process.
+
+C++ will still be an important part of the project. We plan to use C++ for learning core embedded systems concepts, writing small test programs, creating simulations, understanding control logic, and possibly developing custom features later in the project.
+
+AI may be used to explain concepts, help debug code, review documentation, and suggest possible approaches. However, all final decisions, testing, implementation, and documentation will be done and understood by us.
